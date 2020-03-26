@@ -1,11 +1,15 @@
 import random
 from time import sleep
 from parse.models import *
-import mpu.io
+import json
 
 def save_json(data):
 
-    mpu.io.write('data.json', data)
+    saveFile = open('data.json', 'w')
+    saveFile.write(json.dumps(data))
+    saveFile.close()
+
+
 
 
 
