@@ -5,7 +5,6 @@ import mpu.io
 
 def save_json(data):
 
-    data = mpu.io.read('data.json')
     mpu.io.write('data.json', data)
 
 
